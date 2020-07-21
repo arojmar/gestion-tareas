@@ -6,12 +6,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MainViewComponent } from './main-view/main-view.component';
+import { CheckboxComponent } from './main-view/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    MainViewComponent
+    MainViewComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
