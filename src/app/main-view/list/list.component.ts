@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { Tareas } from 'src/models/models';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
+
+  @Output() nuevaTarea: Tareas;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  
 }

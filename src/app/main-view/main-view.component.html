@@ -2,7 +2,8 @@
     <div class="row">
         <form #lista=ngForm>
         <ul class="list-group">
-            <app-checkbox [nTarea]="nuevaTarea($event)">
+            <app-list (nuevaTarea)="nuevaTarea($event)"></app-list>
+            <app-checkbox [nTarea]="newTarea">
             </app-checkbox>
         </ul>
         </form>
