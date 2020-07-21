@@ -6,12 +6,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MainViewComponent } from './main-view/main-view.component';
+import { ListComponent } from './main-view/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    MainViewComponent
+    MainViewComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
