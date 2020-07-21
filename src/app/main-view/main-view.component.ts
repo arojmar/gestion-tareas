@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Tareas } from 'src/models/models';
 
 @Component({
   selector: 'app-main-view',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainViewComponent implements OnInit {
 
+  newTarea: Tareas;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  nuevaTarea(valor: Tareas): void {
+    this.newTarea = valor;
   }
 
 }
