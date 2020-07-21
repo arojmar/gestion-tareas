@@ -11,15 +11,15 @@ export class LoginComponent implements OnInit {
   @Output() logeado = new EventEmitter<boolean>(false);
 
   constructor() { 
-    this.ocultar = false;
+    
   }
 
   ngOnInit(): void {
-        
+    this.ocultar = false; 
   }
 
-  ocultarForm(){
-    this.ocultar =!this.ocultar;
+  ocultarForm(): void {
+    this.ocultar = !this.ocultar;
     this.logeado.emit(!this.ocultar);
   }
 
