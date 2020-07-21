@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.visible = true;
+    this.visible = false;
     console.log("aqui el valor de visible es " + this.visible);   
   }
 
