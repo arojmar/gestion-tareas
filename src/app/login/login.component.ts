@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  ocultar: boolean;
+  @Output() logeado = new EventEmitter<boolean>(false);
+
+  constructor() { 
+    this.ocultar = false;
+  }
 
   ngOnInit(): void {
+        
+  }
+
+  ocultarForm(){
+    this.ocultar =!this.ocultar;
+    this.logeado.emit(!this.ocultar);
   }
 
 }
